@@ -4,12 +4,12 @@ variable "vpc_id" {
 }
 
 variable "available_subnet_ids" {
-  type        = list("string")
+  type        = "list"
   description = "IDs of the available subnets in which to create the endpoint network interfaces"
 }
 
 variable "security_group_ids" {
-  type        = list("string")
+  type        = "list"
   description = "IDs of the security groups to associate with the VPC Endpoint"
 }
 
