@@ -12,4 +12,8 @@ resource "aws_vpc_endpoint" "service_consumer" {
     ProductDomain = "${var.product_domain}"
     ManagedBy     = "terraform"
   }
+
+  lifecycle {
+    create_before_destroy = true
+  }
 }
